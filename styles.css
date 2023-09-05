@@ -2,87 +2,170 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Stalemate&display=swap');
 
+
 body {
     background-color: #FAE29C;
 }
 
-.main-container{
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
+
+@media only screen and (min-width: 800px) {
+    
+    .main-container{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        gap: 13.35vw;
+        margin-top: 22.22vh;
+    }
+    
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        margin-top: 83px;
+        margin-left: 40px;
+        gap: 61px;
+
+    }
+    
+    .navbar div {
+        width: 8.35vw;
+        height: 20px;
+        flex-direction: column;
+        flex-shrink: 0; 
+    }
+    
+    .navbar a {
+        font-family:'Crimson Text', serif;
+        font-weight: 400;
+        font-size: 22px;
+        text-decoration: none;
+        color: #433408;
+    }
+    
+    .body {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #head {
+        font-size: 100px;
+        height: 100px;
+        color: #433408;
+        font-family: 'Old Standard TT', serif;
+    
+    }
+    
+    #subtext {
+        font-size: 20px;
+        font-family: 'Crimson Text', serif;
+        color: #433408;
+    }
+    
+    
+    .description#top {
+        margin-top: 45px;
+    }
+    
+    .description {
+        font-family: 'Crimson Text', serif;
+        font-size: 20px;
+        width: 580px;
+        color: #433408;
+        margin-top: 3px;
+    }
+    
+    .watermark{
+        position: fixed;
+        width: 96px;
+        font-family: 'Stalemate', cursive;
+        font-size: 40px;
+        color: #433408;
+        opacity: 0.7;
+        bottom: 16px;
+        right: 40px;
+    }
+    
+    
+    
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    gap: 13.35vw;
-    margin-top: 22.22vh;
-}
+@media only screen and (max-width: 799px) {
 
-.navbar {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    margin-top: 83px;
-    /* margin-top: 37.5vh; */
-    gap: 61px;
-}
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.navbar li {
-    width: 8.35vww;
-    height: 20px;
-    flex-direction: column;
-    flex-shrink: 0; 
-}
+    .flex-container{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 70px;
+    }
 
-.navbar a {
-    font-family:'Crimson Text', serif;
-    font-weight: 400;
-    font-size: 22px;
-    text-decoration: none;
-    color: #433408;
-}
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.body {
-    display: flex;
-    flex-direction: column;
-}
+    #head {
+        font-size: 100px;
+        height: 100px;
+        color: #433408;
+        font-family: 'Old Standard TT', serif;
+    
+    }
 
-#head {
-    font-size: 100px;
-    height: 100px;
-    color: #433408;
-    font-family: 'Old Standard TT', serif;
-    /* margin-top: 22.22vh; */
+    #subtext {
+        font-size: 20px;
+        font-family: 'Crimson Text', serif;
+        color: #433408;
+    }
 
-}
+    .description#top {
+        margin-top: 50px;
+    }
+    
+    .description {
+        font-family: 'Crimson Text', serif;
+        font-size: 20px;
+        width: 85vw;
+        color: #433408;
+        margin-top: 3px;
+    }
 
-#subtext {
-    font-size: 20px;
-    font-family: 'Crimson Text', serif;
-    color: #433408;
-}
+    .navbar {
+        display: flex;
+        flex-direction: row; 
+        position: fixed;
+        justify-content: space-around;
+        width: 84.97vw;
+        bottom: 22px;
+    }
 
+    .navbar a {
+        font-family:'Crimson Text', serif;
+        font-weight: 400;
+        font-size: 22px;
+        text-decoration: none;
+        color: #433408;
+    }
 
-.description#top {
-    margin-top: 45px;
-}
-
-.description {
-    font-family: 'Crimson Text', serif;
-    font-size: 20px;
-    width: 580px;
-    color: #433408;
-    margin-top: 3px;
-}
-
-.watermark{
-    position: fixed;
-    width: 96px;
-    font-family: 'Stalemate', cursive;
-    font-size: 50px;
-    color: #433408;
-    opacity: 0.7;
-    bottom: 16px;
-    right: 40px;
+    .watermark{
+        position: fixed;
+        font-family: 'Stalemate', cursive;
+        width: 96px;
+        font-size: 38px;
+        color: #433408;
+        opacity: 0.7;
+        bottom: 80px;
+    }
+    
+    
 }
